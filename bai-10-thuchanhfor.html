@@ -1,67 +1,103 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <title>Title</title>-->
-<!--</head>-->
-<!--<body>-->
-<!--<p id="print"></p>-->
-<!--<script>-->
-<!--    let text="";-->
-<!--    let i;-->
-<!--    for ( i=0;i<5;i++){-->
-<!--        text += " The number is " + i + "<br>";-->
-<!--    }-->
-<!--    document.getElementById('print').innerHTML= text;-->
-<!--</script>-->
-<!--</body>-->
-<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="print"></p>
+<script>
+    let text="";
+    let i;
+    for ( i=0;i<5;i++){
+        text += " The number is " + i + "<br>";
+    }
+    document.getElementById('print').innerHTML= text;
+</script>
+</body>
+</html>
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành while</title>
+</head>
+<body>
+<script>
+    let number =null;
+    let total =0;
+    while (number !== -1){
+        number = +prompt('Enter number');
+        total += number;
+        }
+    alert(total);
+
+</script>
+</body>
+</html>
 
 
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <title>Title</title>-->
-<!--</head>-->
-<!--<body>-->
-<!--<script>-->
-<!--    let number =null;-->
-<!--    let total =0;-->
-<!--    while (number !== -1){-->
-<!--        number = +prompt('Enter number');-->
-<!--        total += number;-->
-<!--        }-->
-<!--    alert(total);-->
-
-<!--</script>-->
-<!--</body>-->
-<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành while 2</title>
+</head>
+<body>
+</body>
+<script>
+    let i=0;
+    while(i<100) {
+        document.write("<hr width = " + i + "%>");
+        i++;
+    }
+</script>
+</html>
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành Do While</title>
+</head>
+<body>
+<script>
+    let value = null;
+    do{
+        value=prompt("Nhập vào số từ 1-10");
+    }while(value<1 || value>10);
+    alert("Só bạn vừa nhập là "+ value);
+</script>
+</body>
+</html>
 
 
-
-
-
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <title>Title</title>-->
-<!--</head>-->
-<!--<body>-->
-<!--</body>-->
-<!--<script>-->
-<!--    let i=0;-->
-<!--    while(i<100) {-->
-<!--        document.write("<hr width = " + i + "%>");-->
-<!--        i++;-->
-<!--    }-->
-<!--</script>-->
-<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For lồng for</title>
+</head>
+<body>
+<script>
+    let i=0;
+    let j=0;
+    let cot;
+    cot = "<cot border='1' width='300' cellspacing='0' cellpadding='3' />"
+    for (i = 1; i <= 10; i++) {
+        cot += "<tr>";
+            for (j = 1; j <= 10; j++){
+        cot = cot + "<td>" + i * j + "</td>";
+        }
+        cot= cot + "</tr>";
+    }
+    document.write(cot);
+</script>
+</body>
+</html>
 
 
 
@@ -71,10 +107,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Thực hành Do While</title>
 </head>
 <body>
-
+<script>
+        let sout, i, j;
+        sout = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+        i = j = 1;
+            while (i <= 10) {
+            sout = sout + "<tr>";
+                while (j <= 10) {
+                sout = sout + "<td>" + i * j + "</td>";
+                j++;
+            }
+        sout = sout + "</tr>";
+        j = 1;
+        i++;
+        }
+        sout = sout + "</table>";
+        document.write(sout);
+</script>
 </body>
 </html>
-
